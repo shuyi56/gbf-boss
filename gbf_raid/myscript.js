@@ -22,7 +22,7 @@ if (document.title.indexOf("Granblue Fantasy") != -1) {
     console.log("JQUERY LOADED");
     $("#wrapper .contents");
   });
-  window.setTimeout(init, 4000);
+  window.setTimeout(init, 10000);
   console.log(
     $(
       "#wrapper > div.contents > div.cnt-raid > div.cnt-raid-stage > div.prt-targeting-area > div.prt-gauge-area"
