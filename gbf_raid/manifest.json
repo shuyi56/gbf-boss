@@ -12,7 +12,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://game.granbluefantasy.jp/*"],
+      "matches": ["*://*.game.granbluefantasy.jp/*"],
       "css": ["mystyles.css", "bootstrap.min.css"],
       "js": [
         "popper.min.js",
