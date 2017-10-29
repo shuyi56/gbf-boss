@@ -1,5 +1,6 @@
 // to do
 console.log("CHECK SCRIPT");
+console.log(object);
 
 var triggers = [
   { percent: 50, name: "A trigger", triggered: false },
@@ -16,10 +17,7 @@ var done = false;
 // set interval to make request for boss hp
 
 // get % and if fails to a certain threshold give warning for incoming trigger
-if (
-  document.title.indexOf("Granblue Fantasy") != -1 &&
-  window.location.href.startsWith("http://game.granbluefantasy.jp/#raid")
-) {
+if (document.title.indexOf("Granblue Fantasy") != -1) {
   $(document).ready(function() {
     console.log("JQUERY LOADED");
     $("#wrapper .contents");
