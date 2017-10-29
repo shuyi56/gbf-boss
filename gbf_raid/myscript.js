@@ -16,7 +16,7 @@ var done = false;
 // set interval to make request for boss hp
 
 // get % and if fails to a certain threshold give warning for incoming trigger
-console.log(doucment.title);
+console.log(document.title.indexOf("Granblue Fantasy"));
 if (document.title.indexOf("Granblue Fantasy") != -1) {
   $(document).ready(function() {
     console.log("JQUERY LOADED");
