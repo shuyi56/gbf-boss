@@ -1,6 +1,5 @@
 // to do
 console.log("CHECK SCRIPT");
-console.log(object);
 
 var triggers = [
   { percent: 50, name: "A trigger", triggered: false },
