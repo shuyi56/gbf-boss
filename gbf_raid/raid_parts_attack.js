@@ -1,0 +1,1 @@
+define(["jquery","backbone"],function(a,b){var c=b.Model.extend({defaults:{manifest:[{src:Game.imgUri+"/sp/cjs/raid_parts_attack.png?s=34983e05684cead67fa0f17c490ebc0a",id:"raid_parts_attack",type:"image"}]}});return c});

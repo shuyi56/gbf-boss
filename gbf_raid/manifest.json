@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started example",
+  "description":
+    "This extension allows the user to change the background color of the current page.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://game.granbluefantasy.jp/*"],
+      "css": ["mystyles.css", "bootstrap.min.css"],
+      "js": [
+        "popper.min.js",
+        "jquery-3.2.1.js",
+        "data.js",
+        "myscript.js",
+        "bootstrap.min.js"
+      ],
+      "web_accessible_resources": ["./icons/*"]
+    }
+  ],
+  "permissions": ["<all_urls>", "tabs", "storage"]
+}

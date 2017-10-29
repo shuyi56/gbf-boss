@@ -1,0 +1,26 @@
+#wrapper
+  > div.contents
+  > div.cnt-raid
+  > div.cnt-raid-stage
+  > div.prt-targeting-area
+  > div.prt-gauge-area
+  > div:nth-child(1)
+  p {
+  color: red;
+  margin-top: 100px;
+  margin-left: 60px;
+}
+
+#info-button {
+  margin: 25px 38px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+#title {
+  font-size: 16pt;
+}
+
+#list-content b {
+  font-weight: bold;
+}
