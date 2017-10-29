@@ -1,5 +1,6 @@
 // to do
 console.log("CHECK SCRIPT");
+console.log(object);
 
 var triggers = [
   { percent: 50, name: "A trigger", triggered: false },
@@ -16,13 +17,16 @@ var done = false;
 // set interval to make request for boss hp
 
 // get % and if fails to a certain threshold give warning for incoming trigger
-console.log(document.title.indexOf("Granblue Fantasy"));
-if (document.title.indexOf("Granblue Fantasy") != -1) {
+if (
+  (document.title.indexOf("Granblue Fantasy") != -1 ||
+    document.title.indexOf("グランブルーファンタジー") != -1) &&
+  window.location.href.startsWith("http://game.granbluefantasy.jp/#raid")
+) {
   $(document).ready(function() {
     console.log("JQUERY LOADED");
     $("#wrapper .contents");
   });
-  window.setTimeout(init, 10000);
+  window.setTimeout(init, 4000);
   console.log(
     $(
       "#wrapper > div.contents > div.cnt-raid > div.cnt-raid-stage > div.prt-targeting-area > div.prt-gauge-area"
