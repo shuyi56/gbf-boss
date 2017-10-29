@@ -1,4 +1,6 @@
 // to do
+console.log("CHECK IF SCRIPT IS RUNNING");
+
 var triggers = [
   { percent: 50, name: "A trigger", triggered: false },
   { percent: 25, name: "A trigger", triggered: false }
